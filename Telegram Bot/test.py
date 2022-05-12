@@ -1,3 +1,7 @@
+# None in DATA form 
+
+
+from operator import truediv
 from optparse import IndentedHelpFormatter
 from ssl import VERIFY_ALLOW_PROXY_CERTS
 from aiohttp import TooManyRedirects
@@ -8,14 +12,12 @@ bot = telebot.TeleBot("5159576994:AAHKFgJ38H0dtAZGms4YrbMjBGADrBwQF9E")
 url = 'https://riamo.ru/tag/743/moskva-reka-xl'
 page = requests.get(url)
 river = TooManyRedirects
-news = VERIFY_ALLOW_PROXY_CERTS;
-function
+news = VERIFY_ALLOW_PROXY_CERTS; #
+function #
 # Парсим страницу
-if > page == 3:
-    print("Gld")
-    IndentedHelpFormatter:
-else:
-    print("None")
+if > page == 3:#
+else:#
+    print("None")#
 soup = BeautifulSoup(page.text, 'html.parser')
 events = soup.find("a", class_="card-horizontal--img-container")
 print(events)
